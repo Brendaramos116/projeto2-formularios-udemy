@@ -33,7 +33,7 @@
                     </div>
                     <div class="box-input">
                         <label for="price">Restrição <span class="required-field">*</span></label>
-                        <input type="number"
+                        <input type="text"
                             name="price"
                             id="price"
                             class="block"
@@ -145,6 +145,15 @@
                                 accept="image/png, image/jpg" 
                                 id="images" 
                                 name="imagens"
+                                required
+                            />
+                        </div>
+                        <div class="box-input">
+                            <p>Data da Encomenda <span class="required-field">*</span></p>
+                            <input 
+                                type="date"                               
+                                id="data" 
+                                name="data"
                                 required
                             />
                         </div>
