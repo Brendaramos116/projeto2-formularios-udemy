@@ -99,7 +99,7 @@ As imagens utilizadas no projeto estão hospedadas em links externos para ilustr
 ## 💻 Desenvolvido por
 
 - **Brenda Ramos**
-    Sinta-se à vontade para entrar em contato comigo ou sugerir melhorias!
+    - Sinta-se à vontade para entrar em contato comigo ou sugerir melhorias!
 
 -------
 
