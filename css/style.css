@@ -6,7 +6,9 @@
 }
 
 body{
-    background-color: #f0ebf8;
+
+    background-image: url("https://media.istockphoto.com/id/1126080328/pt/vetorial/vector-pastry-seamless-pattern-with-cakes-pies-muffins-and-eclairs-outline-hand-drawn.jpg?s=612x612&w=0&k=20&c=2QtV5f4ao4Oub8G0M8j6U2N0goFNymzro4XIOag0MD4=");
+      
 }
 
 h1,
@@ -31,27 +33,129 @@ input{
 input[type="text"],
 input[type="number"],
 input[type="date"],
-input[type="file"]{
+input[type="file"],
+textarea{
     width: 400px;
 }
+
+textarea{
+    padding: 10px 5px;
+    margin-top: 5px;
+}
+
 
 /*page header*/
 .header{
     height: 160px;
     padding: 20px;
-    background-color: #673ab7
+    background-image: url("https://cdn.pixabay.com/photo/2023/09/04/20/39/cake-8233676_640.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
+
 .header h3{
-    color: #fff;
+    color: #ec3232;
     margin-top: 0;
 }
 
 /* form container*/
 .form-container{
-    background-color:#fdfdfd;
+    background-color:#eee9e9;
     width: 60%;
     margin: 0 auto;
     position: relative;
-    top: -67px;
+    top: -90px;
+    border-radius: 5px;
+}
+
+/*form header*/
+.form-header{
+    border-bottom: 1px solid #dfdfdf;
+    height: 45px;
+}
+
+.form-header p{
+    color: #673ab7;
+    border-bottom: 2px solid #673ab7;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    line-height: 45px;
+}
+
+/*form-body*/
+.form-body{
+    padding: 30px;
+}
+
+.form-title{
+    border-bottom: 2px solid  #d4cece;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-body p{
+    margin-bottom: 20px;
+}
+
+.required-field{
+    color: #dB0B35;
+}
+
+.box-input{
+    border-bottom: 35px;
+    margin-top: 20px;
+}
+
+.block{
+    display: block;
+}
+
+.optional-input{
+    display: inline-block;
+    margin: 3 30px 30px 3;
+}
+
+.optional-input p{
+    margin-top: 20px;
+}
+
+.optional-list li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.box-input-massa{
+    border-bottom: 20px;
+    margin-top: 20px;   
+}
+
+.img{  
+    width: 160px;
+    height: 100px;
+}
+
+.box-input p{
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.btn-submit{
+    background-color: #673ab7;
+    color: #fff;
+    border: 2px solid transparent;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+    margin: 20px 10px 20px 20px;
+}
+
+.btn-submit:hover{
+    background-color: #fff;
+    color: #673ab7;
+    border-color: #673ab7;
 }

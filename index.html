@@ -4,34 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Venda de veiculos</title>
+    <title>Confeitaria</title>
 </head>
 <body>
    <div class="container">
         <div class="header">
-            <h3>Cadastre seu veículo aqui!</h3>
+            <h3>Faça sua encomenda aqui!</h3>
         </div>
         <div class="form-container">
             <div class="form-header">
                 <p>Fomulário</p>
             </div>
             <div class="form-body">
-                <h1 class="form-title">Venda fácil seu carro!</h1>
-                <p>Descreva as características e marque os opcionais que ele possui:</p>        
+                <h1 class="form-title">Monte Seu Bolo</h1>
+                <p>Descreva as características e marque os opcionais que deseja:</p>        
                 <form>
                     <div class="box-input">
-                        <label for="title">Título do anúncio <span class="required-field">*</span></label>
+                        <label for="title">Ocasião <span class="required-field">*</span></label>
                         <input type="text"
                             name="title"
                             id="title"
                             class="block"
-                            placeholder="um título para anunciar seu carro"
+                            placeholder="Descreva a ocasião que você quer o bolo"
                             minlength="1"
                             maxlength="50"
                             required
                          />
                     </div>
-                    <input type="submit" value="Enviar">
+                    <div class="box-input">
+                        <label for="price">Restrição <span class="required-field">*</span></label>
+                        <input type="number"
+                            name="price"
+                            id="price"
+                            class="block"
+                            placeholder="Defina sem existe alguma restrição, por exemplo: sem lactose"
+                            required
+                         />
+                    </div>
+                    <div class="box-input">
+                        <label for="description">Descrição <span class="required-field">*</span></label>
+                        <textarea type="text"
+                            name="description"
+                            id="description"
+                            class="block"
+                            placeholder="Aqui você coloca os detalhes do bolo que deseja, por exemplo: quero com a cor rosa e dourado."
+                            required
+                        ></textarea>
+                    </div>
+                    <div class="box-input-massa">
+                        <p>Massa <span class="required-field">*</span></p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img class="img" src="https://admin.docepedia.com/site/uploads/2024/08/massas-bolo-selectachocolates-paodelo-1400x640-1-1024x468.jpg" alt="Pão de ló"> 
+                                        <figcaption>
+                                            <input type="radio" name="massa" id="pao-de-lo"/>
+                                            <label for="pao-de-lo">Pão de Ló</label>
+                                        </figcaption>                                             
+                                </td>
+                                <td>
+                                    <img class="img" src="https://admin.docepedia.com/site/uploads/2024/08/massas-bolo-selectachocolates-genoise-1400x640-1-1024x468.jpg" alt="genoise">
+                                        <figcaption>
+                                            <input type="radio" name="massa" id="genoise"/>
+                                            <label for="genoise">Génoise</label>
+                                        </figcaption>
+                                </td>
+                                <td>
+                                    <img class="img" src="https://admin.docepedia.com/site/uploads/2024/08/massas-bolo-selectachocolates-chiffon-1400x640-1-1024x468.jpg" alt="chiffon">
+                                        <figcaption>
+                                            <input type="radio" name="massa" id="chiffon"/>
+                                            <label for="chiffon">Chiffon</label>
+                                        </figcaption>
+                                        
+                                </td> 
+                            </tr>                            
+                            <tr>
+                                <td>
+                                    <img class="img" src="https://bolosparavender.com/wp-content/uploads/2019/06/receita-de-bolo-amanteigado.jpg.webp" alt="amanteigado">
+                                        <figcaption>
+                                            <input type="radio" name="massa" id="amanteigada"/>
+                                            <label for="amanteigada">Amanteigada</label>
+                                        </figcaption>
+                                </td>
+                                <td>
+                                    <img class="img" src="https://cozinhabr.com.br/wordpress/wp-content/files/cozinhabr.com.br/2024/06/red-velvet-2.webp" alt="red-velvet">
+                                        <figcaption>
+                                            <input type="radio" name="massa" id="red_velt"/>
+                                            <label for="red_velt">Red Velvet</label> 
+                                        </figcaption>
+                                </td>                   
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="optional-input">
+                        <p>Opcionais</p>
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" id="airbag" name="optional[]" value="airbag">
+                                <label for="airbag">Airbag</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="alarm" name="optional[]" value="alarm">
+                                <label for="alarm">Alarme</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ac" name="optional[]" value="ac">
+                                <label for="ac">Ar Condicionado</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="reverse_camera" name="optional[]" value="reverse_camera">
+                                <label for="reverse_camera">Câmera de Ré</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="optional-input">
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" id="lane_assistent" name="optional[]" value="lane_assistent">
+                                <label for="lane_assistent">Assitente de pista</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="keyless" name="optional[]" value="keyless">
+                                <label for="keyless">Partida Keyless</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="smartphone" name="optional[]" value="smartphone">
+                                <label for="smartphone">Integração com o Celular</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="leather_seat" name="optional[]" value="leather_seat">
+                                <label for="leather_seat">Banco de Couro</label>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="box-input">
+                            <p>Fotos do veículo:<span class="required-field">*</span></p>
+                            <input 
+                                type="file" multiple 
+                                accept="image/png, image/jpg" 
+                                id="images" 
+                                name="imagens"
+                                required
+                            />
+                        </div>
+                    </div>
+                    <input type="submit" value="Enviar" class="btn-submit">
                 </form>
             </div>
         </div>
